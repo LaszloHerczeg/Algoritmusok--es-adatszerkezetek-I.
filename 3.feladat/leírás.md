@@ -1,4 +1,4 @@
-# 2.feladat - Dinamikus programozás
+# 3.feladat - Dinamikus programozás
 ## Array description
 [A feladat linkje](https://cses.fi/problemset/task/1746/)
 ## A feladat leírása:
