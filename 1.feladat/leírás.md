@@ -1,4 +1,4 @@
-# 1. feladat - Keresés, rendezés, mohó stratégia ---
+# 1. feladat - Keresés, rendezés, mohó stratégia
 ## Sum of four values
 [A feladat linkje](https://cses.fi/problemset/task/1642/)
 ### A feladat leírása:
