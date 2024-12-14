@@ -28,8 +28,8 @@ def array_description(n:int, m:int, array:list):
         else:
             # Ha az elem 0, akkor az azt megelőző helyen lévő lehetőségek határozzák meg az értékeket:
             if array[i] == 0:
-                for sub_i in range(1, m + 1):
-                    l[i][sub_i] = (l[i - 1][sub_i - 1] + l[i - 1][sub_i] + l[i - 1][sub_i + 1]) % 1000000007
+                for j in range(1, m + 1):
+                    l[i][j] = (l[i - 1][j - 1] + l[i - 1][j] + l[i - 1][j + 1]) % 1000000007
             # Ha az érték nem 0, akkor a feltételek miatt az előző helyen lévő, 
             # (érték - 1) + érték + (érték + 1) lehetőségek száma adja a megoldást:
             else:
