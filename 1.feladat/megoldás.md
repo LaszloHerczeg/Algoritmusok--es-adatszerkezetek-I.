@@ -33,10 +33,8 @@
 8. Ha j-n végigiterálok n-3-ig és nem kapok értéket, akkor i-t megnövelem 1-gyel és folytatom a 2. lépéstől.
 
 9. Ha az algoritmus visszaad egy értéket, akkor az egy optimális megoldás és visszaadom az indexeket. Ha az algoritmus visszaadott érték nélkül megáll, akkor nincs megfelelő eredmény.
-
 <br> `if sorted_array[left][0] + sorted_array[right][0] == sub_target:`
 <br> `return (sorted_array[i][1], sorted_array[j][1], sorted_array[left][1], sorted_array[right][1])`
-
 <br> ` return "IMPOSSIBLE"`
 
 
