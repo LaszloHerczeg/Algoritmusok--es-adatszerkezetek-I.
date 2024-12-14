@@ -1,11 +1,5 @@
 # https://cses.fi/problemset/task/1642/
 
-# Input felvétele:
-n, x = map(int, input().split(" "))
-array = list(map(int, input().split(" ")))
-
-
-
 def sum_of_four_values(n:int, x:int, array:list):
     """
     Paraméterek:
@@ -46,6 +40,8 @@ def sum_of_four_values(n:int, x:int, array:list):
 
 
 if __name__ == "__main__":
+    n, x = map(int, input().split(" "))
+    array = list(map(int, input().split(" ")))
     solution = sum_of_four_values(n, x, array)
     if solution == "IMPOSSIBLE":
         print(solution)
