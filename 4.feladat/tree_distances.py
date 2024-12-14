@@ -15,7 +15,7 @@ def build_tree(edges):
 
 def bfs(tree, start):
     """
-    Végrehajt egy szélességi bejárást, visszatérve a legtávolabbi csomópontot és annak távolságát
+    Végrehajt egy szélességi bejárást, visszaadva a legtávolabbi csomópontot és a bejárt csúcsoktól vett távolságot
     """
     queue = deque([(start, -1, 0)])  # aktuális csomópont, szülő, távolság
     farthest_node = start
@@ -34,7 +34,7 @@ def bfs(tree, start):
                     max_distance = distance + 1
                     farthest_node = neighbor
 
-    return farthest_node, max_distance, distances
+    return farthest_node, distances
 
 def find_max_distances(n, edges):
     """
@@ -45,13 +45,13 @@ def find_max_distances(n, edges):
     tree = build_tree(edges)
 
     # 1. Találjuk meg a fa egyik átmérőjének egyik végpontját
-    farthest_node, _, _ = bfs(tree, 1)
+    farthest_node, _ = bfs(tree, 1)
 
     # 2. Végezünk egy BFS-t innen az átmérő másik végpontjának megtalálásához
-    other_end, _, distances_from_first = bfs(tree, farthest_node)
+    other_end, distances_from_first = bfs(tree, farthest_node)
 
     # 3. Végezünk egy BFS-t az átmérő másik végpontjából
-    _, _, distances_from_second = bfs(tree, other_end)
+    _, distances_from_second = bfs(tree, other_end)
 
     # 4. Minden csomópontra a két távolság maximumát vesszük
     max_distances = [max(distances_from_first[i], distances_from_second[i]) for i in range(1, n + 1)]
@@ -65,4 +65,5 @@ if __name__ == "__main__":
 
     result = find_max_distances(n, edges)
 
-    print(" ".join(map(str, result)))
+    for item in result:
+        print(item, end = " ")
