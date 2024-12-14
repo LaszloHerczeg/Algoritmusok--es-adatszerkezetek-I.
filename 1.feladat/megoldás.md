@@ -10,14 +10,11 @@
 2. Ezután a különböző számokon végigiterálok az alábbiak szerint, ezzel keresem a megfelelő értéket.
 
 3. Rögzítem az első értéket, a i-edik indexű elemnek (0 <= i <= n-4) és csökkentem a célösszeg értékét vele:
-<br> 
-`for i in range(n - 3):`
-<br>
-`target = x - sorted_array[i][0]`
+<br> `for i in range(n - 3):`
+<br> `target = x - sorted_array[i][0]`
 
 4. Kiválasztom a második értéket, a j-edik indexű elemnek (i+1 <= j <= n-3) és csökkentem a célösszeg értékét vele:
-<br>
-`for j in range(i + 1, n - 2):`
+<br> `for j in range(i + 1, n - 2):`
 <br> `j = target - sorted_array[j][0]`
 
 5. Kiválasztom a 3. számot, a j+1-edik indexű elemnek:
