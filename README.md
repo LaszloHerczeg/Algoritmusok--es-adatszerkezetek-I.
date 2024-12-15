@@ -19,4 +19,8 @@
 <br> [a feladat leírása](https://github.com/LaszloHerczeg/Algoritmusok-es-adatszerkezetek-I./blob/main/4.feladat/leírás.md),
 <br> [a feladat megoldása](https://github.com/LaszloHerczeg/Algoritmusok-es-adatszerkezetek-I./blob/main/4.feladat/tree_distances.py),
 <br> [a feladat megoldásának magyarázata](https://github.com/LaszloHerczeg/Algoritmusok-es-adatszerkezetek-I./blob/main/4.feladat/megoldás.md)
-* 5.feladat: Kollikviumi feladat, SPOJ/OKTV - Folyamatban
+* 5.feladat: Kollikviumi feladat, SPOJ/OKTV -
+* <br> [Agressive Cows](https://github.com/LaszloHerczeg/Algoritmusok-es-adatszerkezetek-I./tree/main/K),
+* <br> [a feladat leírása](https://www.spoj.com/problems/AGGRCOW/),
+* <br> [a feladat megoldása](https://github.com/LaszloHerczeg/Algoritmusok-es-adatszerkezetek-I./blob/main/K/aggressive_cows.py),
+* <br> [a feladat megoldásának magyarázata](https://github.com/LaszloHerczeg/Algoritmusok-es-adatszerkezetek-I./blob/main/K/megoldás.md)
