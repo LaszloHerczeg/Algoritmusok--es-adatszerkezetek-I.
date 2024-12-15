@@ -1,3 +1,5 @@
+# https://www.spoj.com/problems/AGGRCOW/
+
 def agressive_cows(x):
 
 	cowsplaced = 1
